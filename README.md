@@ -37,11 +37,11 @@ No gerenciamento, utilize os botões Edit, Delete ou Full para alterar o status 
 
 ## Ilustração do Projeto
 <div align="center">
-    <img width="550" height="300" src=https://github.com/user-attachments/assets/614b0d67-e90f-4387-8ca9-32736057dfda)>
+    <img width="550" height="300" src=https://github.com/user-attachments/assets/614b0d67-e90f-4387-8ca9-32736057dfda>
 </div>
 
 <div align="center">
-    <img width="550" height="300" src=https://github.com/user-attachments/assets/09005107-db47-49f7-aa90-ef9229e16137)>
+    <img width="550" height="300" src=https://github.com/user-attachments/assets/09005107-db47-49f7-aa90-ef9229e16137>
 </div>
 
 ## Contribuição
