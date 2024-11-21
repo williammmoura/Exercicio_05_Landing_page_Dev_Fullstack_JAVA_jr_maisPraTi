@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="style/management.css">
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav id="menu">
+            <ul id="menu-items">
+                <li id="menu-items-list">To do List App!</li>
+                <li id="menu-items-list"><a href="main.html" class="menu-items-list-link">Main</a></li>
+                <li id="menu-items-list"><a href="management.html" class="menu-items-list-link">Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Título -->
+    <h2>Task Management</h2>
+
+    <!-- Filtros -->
+    <div id="filters">
+        <div>
+            <label for="filter-type">Type:</label>
+            <select id="filter-type">
+                <option value="">All Types</option>
+                <option value="studies">Studies</option>
+                <option value="work">Work</option>
+                <option value="supermarket">Supermarket</option>
+                <option value="leisure">Leisure</option>
+            </select>
+        </div>
+        <div>
+            <label for="search-task">Search:</label>
+            <input type="text" id="search-task" placeholder="Search task...">
+        </div>
+        <button id="apply-filters">Apply Filters</button> <!-- Botão para aplicar os filtros -->
+    </div>
+
+    <!-- Lista de Tarefas -->
+    <div id="task-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- A lista será gerada dinamicamente pelo JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-p-id">&copy; 2024 William Moura. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Script no final do body -->
+</body>
+</html>

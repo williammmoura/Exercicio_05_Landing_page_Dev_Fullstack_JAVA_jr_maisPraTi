@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*Estilização do menu*/
+#menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #46e673;
+    padding: 10px 20px;
+}
+
+#menu li {
+    margin: 0 15px;
+    color: #fff;
+}
+
+#menu ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu ul li a:hover {
+    background-color: #46e6b1;
+    border-radius: 10px;
+}
+
+/*Estilização subtitulo*/
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+/*Estilização do formulário*/
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #46e673;
+}
+
+select, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 12pt;
+}
+
+select:focus, input:focus {
+    border-color: #46e673;
+    outline: none;
+}
+
+/* Estilização do "placeholder" do select */
+select {
+    color: #555;
+}
+
+select option[value=""] {
+    color: #888;
+}
+
+select:invalid {
+    color: #888; /* Placeholder quando a opção inválida (vazia) está selecionada */
+}
+
+/* Estilização do placeholder dos inputs */
+input::placeholder {
+    color: #888;
+}
+
+/*Estilização do botão*/
+button {
+    background-color: #46e673;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #46e6b1;
+}
+
+/* Estilização do footer */
+footer {
+    background-color: #46e673;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Estilos para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    /* Ajuste do menu */
+    #menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu li {
+        margin: 10px 0;
+    }
+
+    /* Centralizar e reduzir o tamanho do subtítulo */
+    h2 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    /* Ajuste do formulário */
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    select, 
+    input[type="number"], 
+    input[type="text"] {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    /* Ajuste do botão */
+    button {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    /* Footer com padding reduzido */
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Estilos para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    /* Tamanho do subtítulo */
+    h2 {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+
+    /* Ajuste do formulário */
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Reduz o tamanho dos inputs e selects */
+    select, 
+    input[type="number"], 
+    input[type="text"] {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+
+    /* Botão com ajuste de padding e fonte */
+    button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    /* Footer com fonte menor */
+    footer {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+

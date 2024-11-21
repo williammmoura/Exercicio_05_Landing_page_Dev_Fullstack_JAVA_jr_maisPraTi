@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul id="menu-items">
+                <li id="menu-items-list">To do List App!</li>
+                <li id="menu-items-list"><a href="#" class="menu-items-list-link">Main</a></li>
+                <li id="menu-items-list"><a href="management.html" class="menu-items-list-link">Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Register Task</h2>
+        <form id="task-form">
+            <fieldset>
+                <legend>Date</legend>
+                <!-- Ajustado para garantir que as opções estejam consistentes com o JS -->
+                <select name="select-year" id="select-year" required>
+                    <option value=""> Select Year </option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+
+                <select name="select-month" id="select-month" required>
+                    <option value=""> Select Month </option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>   
+                </select>
+
+                <input type="number" name="input-day" id="input-day" placeholder="Day" min="1" max="31" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Task Information</legend>
+                <select name="select-type" id="select-type" required>
+                    <option value=""> Select type </option>
+                    <option value="studies">Studies</option>
+                    <option value="work">Work</option>
+                    <option value="supermarket">Supermarket</option>
+                    <option value="leisure">Leisure</option>
+                </select>
+
+                <input type="text" name="input-description" id="input-description" placeholder="Description" required>
+            </fieldset>
+
+            <!-- Alterado para type="submit" para respeitar o padrão de formulários -->
+            <button type="submit" id="saveBtn">Save</button>
+        </form>
+    </main>
+
+    <footer>
+        <p id="footer-p-id">&copy; 2024 William Moura. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Script no final do body -->
+</body>
+</html>

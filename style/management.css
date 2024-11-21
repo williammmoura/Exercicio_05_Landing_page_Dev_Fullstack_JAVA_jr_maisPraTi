@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*Estilização do menu*/
+#menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #46e673;
+    padding: 10px 20px;
+}
+
+#menu li {
+    margin: 0 15px;
+    color: #fff;
+}
+
+#menu ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu ul li a:hover {
+    background-color: #46e6b1;
+    border-radius: 10px;
+}
+
+/* Estilização do subtítulo */
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilização dos filtros */
+#filters {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+#filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#filters input, #filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 12pt;
+}
+
+#filter-type:focus, #search-task:focus {
+    border-color: #46e673;
+    outline: none;
+}
+
+/* Estilização da lista de tarefas */
+#task-list {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#task-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#task-list table th, #task-list table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#task-list table th {
+    background-color: #46e673;
+    color: #fff;
+}
+
+/*Estilização do botão*/
+#apply-filters {
+    background-color: #46e673;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #46e6b1;
+}
+
+/*Botões da tabela*/
+#task-list table td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list .edit-btn {
+    background-color: #ffa726;
+    color: white;
+}
+
+#task-list .complete-btn {
+    background-color: #66bb6a;
+    color: white;
+}
+
+#task-list .delete-btn {
+    background-color: #e57373;
+    color: white;
+}
+
+#task-list button:hover {
+    opacity: 0.8;
+}
+
+/* Estilização do footer */
+footer {
+    background-color: #46e673;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Estilos para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    /* Ajuste do menu */
+    #menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Centralizar e aumentar o espaçamento entre os itens do menu */
+    #menu li {
+        margin: 10px 0;
+    }
+
+    /* Ajuste da seção de filtros */
+    #filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filters div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Ajuste da tabela */
+    #task-list {
+        width: 100%;
+        overflow-x: auto; /* Permite rolagem horizontal */
+    }
+
+    #task-list table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #task-list table th, 
+    #task-list table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+/* Estilos para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    /* Tamanho do título e alinhamento */
+    h2 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    /* Ajuste de padding e margens para economia de espaço */
+    #filters {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* Ajuste de tamanho dos botões */
+    #task-list button {
+        padding: 5px 8px;
+        font-size: 0.8em;
+    }
+
+    /* Remover padding adicional do footer */
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Adiciona estilo para tarefas concluídas */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
