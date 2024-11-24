@@ -88,7 +88,7 @@ function addTask(event) {
 // Função para editar uma tarefa
 function editTask(index) {
     localStorage.setItem('taskIndex', index); // Salva o índice no localStorage
-    window.location.href = 'main.html'; // Redireciona para a página de edição
+    window.location.href = 'index.html'; // Redireciona para a página de edição
 }
 
 // Função para atualizar uma tarefa
