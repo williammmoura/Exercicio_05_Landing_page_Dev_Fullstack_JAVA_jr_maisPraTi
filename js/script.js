@@ -183,3 +183,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const applyFiltersButton = document.getElementById('apply-filters');
+    if (applyFiltersButton) {
+        applyFiltersButton.addEventListener('click', applyFilters);
+    }
+});
